@@ -1,0 +1,25 @@
+.paragraphs {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+
+.paragraph-1 {
+  max-width: 550px;
+  margin-right: 40px;
+}
+
+.paragraph-2 {
+  max-width: 550px;
+}
+
+.section-6 {
+  height: 400px;
+}
+
+a {
+  color: rgb(93, 182, 108);
+  font-family: 'Space', monospace;
+  font-weight: bold;
+  font-size: 25px;
+}

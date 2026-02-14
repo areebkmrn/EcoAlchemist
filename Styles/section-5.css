@@ -1,0 +1,63 @@
+.badges-symbols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.badges-title {
+  font-size: 16px;
+  font-family: 'Space', monospace;
+  color: rgb(93, 182, 108);
+}
+
+.golden-philosopher,
+.elemental-adept,
+.sprouting-sage {
+  width: 140px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  transition: 0.3s;
+}
+
+.elemental-adept {
+  margin-bottom: 5px;
+}
+
+.golden-philosopher{
+  margin-bottom: -1px;
+}
+
+.adept-container {
+  margin-right: 10px;
+}
+
+
+
+.sprouting-sage-container .tooltip,
+.adept-container .tooltip,
+.philosopher-container .tooltip {
+  position: absolute;
+  background-color: rgb(11, 45, 114); 
+  background-image: linear-gradient(to bottom, rgb(21, 23, 61), rgb(36, 37, 59));
+  color: rgb(93, 182, 108);
+ 
+  border-style: solid;
+  border-color: rgb(93, 182, 108);
+  padding: 4px 8px 4px 8px;
+  border-radius: 10px;
+  max-width: 250px;
+  
+  font-family: 'Space', monospace;
+  font-size: 18px;
+  
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sprouting-sage-container:hover .tooltip,
+.adept-container:hover .tooltip,
+.philosopher-container:hover .tooltip {
+  opacity: 1;
+}

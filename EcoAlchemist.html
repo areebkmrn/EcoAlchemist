@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eco Alchemist</title>
+    <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/sections.css">
+    <link rel="stylesheet" href="Styles/section-1.css">
+    <link rel="stylesheet" href="Styles/section-2.css">
+    <link rel="stylesheet" href="Styles/section-3.css">
+    <link rel="stylesheet" href="Styles/section-4.css"> 
+    <link rel="stylesheet" href="Styles/section-5.css">
+    <link rel="stylesheet" href="Styles/section-6.css">
+
+    
+  <link href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="Icons/header.symbol.png" class="symbol">
+      <p class="title">
+        Eco Alchemist
+      </p>
+      <p class="subtitle">
+        "Turning Waste Into Wisdom"
+      </p>
+      <p class="subtitle-2">
+        //Wes:Hack 26 Project
+      </p>
+    </div>
+
+    <div class="sidebar">
+      <a href="#dashboard" class="sidebar-icon">
+        <img src="Icons/Dashboard.icon.png" class="dashboard-icon">
+      </a>
+      <a href="#runes" class="sidebar-icon">
+        <img src="Icons/Runes.icon.png">
+      </a>
+      <a href="#eco-progress" class="sidebar-icon">
+        <img src="Icons/EcoProgress.icon.png">
+      </a>
+      <a href="#tips" class="sidebar-icon">
+        <img src="Icons/Tips.icon.png">
+      </a>      
+      <a href="#badges" class="sidebar-icon">
+        <img src="Icons/Badges.icon.png">
+      </a>
+      <a href="#about" class="sidebar-icon">
+        <img src="Icons/About.icon.png">
+      </a>
+    </div>
+
+    <div class="sections">
+      <div class="section-1-section-2-container" id="dashboard">
+        <div class="section-1">
+          <p class="section-title">
+            --Your Alchemy Dashboard--
+          </p>
+
+          <div class="input-eco-container">
+            <div class="input">
+              <input class="input-bar" type="number" placeholder=" Food wasted today (grams)" id="food-input">
+              <input class="input-bar" type="number" placeholder=" Water used today (liters)" id="water-input">
+              <input class="input-bar" type="number" placeholder=" Electricity used today (kWh)"  id="electricity-input">
+              <button id="calculate-btn">Calculate Eco Score</button>
+            </div>
+
+            <div class="eco-score-container">
+              <p>Eco-Score:</p>
+              <div class="eco-bar-bg">
+               <div class="eco-bar" id="eco-bar"></div>
+              </div>
+              <div id="eco-score-text">0</div>
+            </div>
+         </div>
+       </div>
+
+        <div class="section-2" id="runes">
+         <p class="section-title">
+           --Your Magical Runes--
+         </p>
+         
+         <div class="rune-symbols">
+          <div class="water rune">
+            <img src="Runes/Water.png" class="water-rune">
+            <p class="rune-title">>Water Rune</p>
+          </div>
+          
+          <div class="wind rune">
+            <img src="Runes/Wind.png" class="wind-rune">
+            <p class="rune-title">>Wind Rune</p>
+          </div>
+          <div class="food rune">
+            <img src="Runes/Food.png" class="food-rune">
+            <p class="rune-title">>Earth Rune</p>
+          </div>          
+         </div>
+         
+        </div>  
+      </div>
+      
+      <div class="section-3-container" id="eco-progress"> 
+        <div class="section-3">
+          <p class="section-title">
+            --Eco Progres--
+          </p>
+
+          <div class="weekly-eco-container">
+            <div class="weekly-bar" id="day-0"></div>
+            <div class="weekly-bar" id="day-1"></div>
+            <div class="weekly-bar" id="day-2"></div>
+            <div class="weekly-bar" id="day-3"></div>
+            <div class="weekly-bar" id="day-4"></div>
+            <div class="weekly-bar" id="day-5"></div>
+            <div class="weekly-bar" id="day-6"></div>          
+          </div>
+        </div>
+      </div>
+
+      <div class="section-4-section-5-container" id="tips">
+        <div class="section-4">
+          <p class="section-title">
+            --Tips--
+          </p>
+         
+          <p class="earth-tips">--Finish your leftovers -> earn Earth Rune</p>
+          <p class="earth-tips">--Plan meals to reduce overbuying → earn Earth Rune</p>
+          
+          <p class="water-tips">--Turn off the tap while brushing → earn Water Rune</p>
+          <p class="water-tips">--Take a 5-min shorter shower → earn Water Rune</p>
+
+          <p class="electricity-tips">--Unplug unused electronics → earn Wind Rune</p>
+          <p class="electricity-tips">--Switch to LED lights → earn Wind Rune</p>
+        </div>
+
+        <div class="section-5" id="badges">
+          <p class="section-title">
+            --Badges--
+          </p>
+
+         <div class="badges-symbols">     
+
+          <div class="sprouting-sage-container">
+            <img src="Badges/sprouting-sage.png" class="sprouting-sage">
+            <p class="badges-title">>Sprouting Sage</p>
+            <div class="tooltip">For first successful eco-score entry.</div>
+          </div>  
+
+          <div class="adept-container">
+            <img src="Badges/elemenal-adept.png" class="elemental-adept">
+            <p class="badges-title">>Elemental Adept</p>
+            <div class="tooltip">Maintain a balanced usage (food, water, electricity) for 14 days.</div>
+          </div>
+          
+          <div class="philosopher-container">
+            <img src="Badges/golden-philosopher.png" class="golden-philosopher">
+            <p class="badges-title">>Golden Philosopher</p>
+            <div class="tooltip">Achieve top-tier eco-score (>90) and unlock all runes.</div>
+          </div>      
+
+         </div>
+        </div>
+      </div>
+
+
+      <div class="section-6-container" id="about">
+        <div class="section-6">
+          <p class="section-title">
+            --About--
+          </p>
+          
+          <div class="paragraphs">
+            <p class="paragraph-1">
+            In today’s world, we generate waste and consume resources without always realizing the impact.
+            Digital Alchemist transforms everyday habits — like food waste, water use, and electricity consumption — into powerful digital elements.
+            </p>
+
+            <p class="paragraph-2">
+            As the theme is digital alchemy, through a system of runes, eco-scores, and rewards, users transmute raw data into long term progress.
+            By turning sustainability into a game, we make small daily actions feel meaningful — and powerful.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://ivory-ethelind-26.tiiny.site/">Here is a game to promote sustainability</a>
+          </div>
+
+        </div>
+      </div>
+
+      <script src="Scripts/Dashboard-Runes.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,11 @@
+.earth-tips,
+.electricity-tips,
+.water-tips {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 5px;
+  color: rgb(93, 182, 108);
+  font-family: 'Space', monospace;
+  font-weight: bold;
+  font-size: 15px;
+}

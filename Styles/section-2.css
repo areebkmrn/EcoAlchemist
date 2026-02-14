@@ -1,0 +1,39 @@
+.rune-symbols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.rune-title {
+  font-family: 'Space', monospace;
+  color: rgb(93, 182, 108);
+}
+
+.water-rune,
+.wind-rune,
+.food-rune {
+  width: 150px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  transition: 0.3s;
+}
+
+
+
+.water-rune:hover,
+.wind-rune:hover,
+.food-rune:hover {
+  width: 185px;
+}
+
+.wind-rune {
+  margin-right: 6px;
+  margin-bottom: 12px;
+}
+
+.food-rune {
+  margin-top: 5px;
+}
+

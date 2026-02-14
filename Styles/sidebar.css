@@ -1,0 +1,38 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  bottom: 0;
+  width: 150px;
+  padding-right: 5px;
+
+  background-color: rgb(246, 231, 188); 
+  background-image: linear-gradient(to bottom, rgb(246, 231, 188), rgb(233, 223, 196));
+  
+  border-style: solid;
+}
+
+.sidebar-icon {
+  filter: brightness(0%) ;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  
+  max-width: 150px;
+  max-height: 150px;
+
+  transition: opacity 0.2s;
+}
+
+.dashboard-icon {
+  margin-left: 12px;
+}
+
+.sidebar-icon:hover {
+  opacity: 0.5;
+}
+
+.sidebar-icon:active {
+  opacity: 1;
+}
