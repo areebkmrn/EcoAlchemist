@@ -36,3 +36,17 @@
 .sidebar-icon:active {
   opacity: 1;
 }
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+   margin-left: 0;
+  }
+}
+
+
