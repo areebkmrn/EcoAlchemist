@@ -41,12 +41,16 @@
   .sidebar {
     width: 0px;
   }
-}
-
-@media (max-width: 1200px) {
   body {
    margin-left: 0;
   }
+
+  header {
+    width: 100%;
 }
+
+
+
+
 
 
